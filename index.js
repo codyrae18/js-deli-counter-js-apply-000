@@ -1,11 +1,10 @@
 var num = [];
 var myDeliLine = [];
-
+var num = 1;
 function takeANumber(myDeliLine) {
-  var num = 0;
   myDeliLine.push(num);
   num ++;
-  return "Welcome, You are number " + myDeliLine.length;
+  return "Welcome, You are number " + myDeliLine.length + ",";
 }
 myDeliLine[1]
 function nowServing(nowServ){
