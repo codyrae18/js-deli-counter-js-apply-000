@@ -6,7 +6,7 @@ function takeANumber(myDeliLine, name) {
   return "Welcome, " + name + ". You are number " + myDeliLine.length + " in line.";
 }
 
-function nowServing(nowServ) {
+function nowServing(nowServ){
   if(nowServ.length === 0){
     return "There is nobody waiting to be served!";
   } else {
@@ -15,19 +15,21 @@ function nowServing(nowServ) {
     return "Currently serving " + name + ".";
   }
 }
-
-function currentLine(num){
-  if(num.length === 0) {
+ function currentLine(num){
+  if(num.length === 0){
     return "The line is currently empty.";
-  } 
-  
-  else {
-      var custLine = [];
+  }  else {
+    var custLine = [];
     for (var i = 0; i < num.length; i++){ 
-      custLine += (i + 1) + ". " + num[i] + ", ";
+      custLine += (i+1) + ". " + num[i] + ", ";
     }
-      custLine = custLine.slice(0, custLine.length-2);
+    custLine = custLine.slice(0, custLine.length-2);
     return "The line is currently: " + custLine;
   }
 }
+
+
+takeANumber("Ada");
+takeANumber("Grace");
+takeANumber("Kent");
 
