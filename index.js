@@ -4,7 +4,7 @@ var myDeliLine = [];
 function takeANumber(myDeliLine) {
   var num = 0;
   myDeliLine.push(num);
-  myDeliLine ++;
+  num ++;
   return "Welcome, You are number " + myDeliLine.length;
 }
 myDeliLine[1]
