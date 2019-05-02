@@ -1,11 +1,13 @@
 var num = [];
 var myDeliLine = [];
 
-function takeANumber(myDeliLine, name) {
-  myDeliLine.push(name);
-  return "Welcome, " + name + ". You are number " + myDeliLine.length + " in line.";
+function takeANumber(myDeliLine) {
+  var num = 0;
+  myDeliLine.push(num);
+  myDeliLine ++;
+  return "Welcome, You are number " + myDeliLine.length;
 }
-
+myDeliLine[1]
 function nowServing(nowServ){
   if(nowServ.length === 0){
     return "There is nobody waiting to be served!";
